@@ -90,6 +90,9 @@ nav {
     text-align: center;
     height: 14rem;
     margin: 1.5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     h1,
     p {
@@ -107,6 +110,12 @@ nav {
         margin-top: 0;
     }
 
+    .card-selctor {
+        flex: 1, 1, 12rem;
+        display: flex;
+        flex-direction: column;
+    }
+
     .feature img {
         display: block;
         max-width: 100%;
@@ -117,5 +126,25 @@ nav {
         border-top: 1px solid var(--line);
         margin-top: 2rem;
         font-size: .9rem;
+    }
+}
+
+card {
+    display: flex;
+    flex-wrap: wrap 1rem;
+}
+
+.feature {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+
+    .img {
+        width: 40%;
+
+    }
+
+    .words {
+        flex: 1;
     }
 }
